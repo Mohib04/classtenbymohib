@@ -1,128 +1,210 @@
-body{
-    margin:0;
-    padding: 0px;
-    background-color: #F0F2F5;
+body {
+    margin: 0;
+    padding: 0;
 }
-.header-area{
-    width: 90%;
+
+.container {
+    width: 95%;
     margin: auto;
-    display: flex;
 }
 
-.recent-login{
-    width: 50%;
-    float: left;
-}
-.recent-img img{
-    width: 40%;
-    margin-left: -25px;
-    margin-bottom: -23px;
-    padding-top: 50px;
-}
-.recent-login h3{
-    margin-bottom: -15px;
-}
-.box1{
-    background-color: white;
-    width: 28%;
-    float: left;
-    text-align: center;
-    border: 1px solid #DDDFE2;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.box1:hover{
-    box-shadow: 10px 10px 5px #aaaaaa;
-    transition: 1s;
-}
-.box1 img,
-.box2 img,
-.box3 img
-{
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+.header {
+    background-color: #F0F2F5;
     width: 100%;
+    min-height: 530px;
 }
-.box1 p{
 
+.footer {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    min-height: 280px;
 }
-.login-box .box2{
-    background-color: white;
-    width: 28%;
+
+.recent-login {
     float: left;
-    overflow: hidden;
-    text-align: center;
-    margin-left:2%;
-    margin-right:2%;
-    cursor: pointer;
-    border-radius: 5px;
-    border: 1px solid #DDDFE2;
+    width: 40%;
+    padding-left: 10%;
 }
-.box2:hover{
-    box-shadow: 10px 10px 5px #aaaaaa;
-    transition: .75s;
+
+.text-area img {
+    width: 38%;
+    padding: 0;
+    margin-left: -23px;
+    margin-bottom: -27px;
 }
-.login-box .box3{
+
+.text-area h2 {
+    margin-bottom: -13px;
+}
+
+.box-area a {
+    text-decoration: none;
+    color: #4B4F56;
+}
+
+.box1 {
+    width: 30%;
+    float: left;
     background-color: white;
-    width: 28%;
-    overflow: hidden;
     text-align: center;
-    cursor: pointer;
     border-radius: 5px;
-    border: 1px solid #DDDFE2;
-}
-.box3:hover{
-    box-shadow: 10px 10px 5px #aaaaaa;
-    transition: 1s;
 }
 
+.box1:hover {
+    box-shadow: 2px 2px 2px 2px #888888;
+    transition: .50s;
+}
 
+.box1 img {
+    inline-size: 100%;
+    border-start-start-radius: 5px;
+    border-start-end-radius: 5px;
+}
 
-
-
-.signup-area{
-    width: 50%;
+.box2 {
+    width: 30%;
     overflow: hidden;
-    margin-top: 130px;
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
 }
 
-.signup-area input[type="gmail"]{
-    display: block;
-    display: block;
-    border: 2px solid #D3D6D9;
+.box2 img {
+    inline-size: 100%;
+    border-start-start-radius: 5px;
+    border-start-end-radius: 5px;
+}
+
+.box2:hover {
+    box-shadow: 2px 2px 2px 2px #888888;
+    transition: .50s;
+}
+
+.box3 {
+    width: 30%;
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
     border-radius: 5px;
-    height: 50px;
-    margin-top: 49px;
-    width: 70%;
+}
+
+.box3:hover {
+    box-shadow: 2px 2px 2px 2px #888888;
+    transition: .50s;
+}
+
+.box3 img {
+    inline-size: 100%;
+    border-start-start-radius: 5px;
+    border-start-end-radius: 5px;
+}
+
+.sign-up {
+    overflow: hidden;
+    width: 50%;
+}
+
+.login {
+    width: 80%;
+    margin-left: 50px;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px #888888;
+    margin-top: 80px;
+    border-radius: 5px;
+}
+
+.login-agea {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.input-area input {
+    display: block;
+    margin: auto;
+}
+
+.input-area {
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+.input-area input[type="text"] {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 12px;
     font-size: 20px;
-}
-.signup-area input[type="password"]{
-    display: block;
-    display: block;
-    border: 2px solid #D3D6D9;
-    border-radius: 5px;
-    height: 50px;
+    border: 1px solid #DDDFE2;
+    border-radius: 4px;
     width: 70%;
+}
+
+.input-area input[type="text"]:focus {
+    box-shadow: 1px 1px 1px 1px rgb(140, 140, 236);
+}
+
+.input-area input[type="password"] {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 12px;
     font-size: 20px;
-}
-.signup-area input[type="gmail"]:focus{
-    border: 1px solid rgb(7, 21, 214);
-}
-.signup-area input[type="password"]:focus{
-    border: 1px solid rgb(7, 21, 214);
-}
-.signup-area input[type="submit"]{
-    display: block;
-    display: block;
-    border: 2px solid #D3D6D9;
-    border-radius: 5px;
-    height: 50px;
+    border: 1px solid #DDDFE2;
+    border-radius: 4px;
     width: 70%;
-    background-color: #1877F2;
+}
+
+.input-area input[type="password"]:focus {
+    box-shadow: 1px 1px 1px 1px rgb(140, 140, 236);
+}
+
+.input-area input[type="submit"] {
+    background-color: #166FE5;
     color: white;
+    border-radius: 4px;
+    border: none;
+    padding: 12px;
     font-size: 20px;
+    border-radius: 4px;
+    width: 75%;
+    font-weight: bold;
     cursor: pointer;
 }
-.forgotten a{
-    display: block;
+
+.non-input-area {
+    text-align: center;
+}
+
+.non-input-area hr {
+    border: 1px solid #DADDE1;
+    width: 94%;
+    margin-top: 25px;
+}
+
+.non-input-area .create a {
+    background-color: #36A420;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    padding: 12px;
+    font-size: 20px;
+    border-radius: 4px;
+    width: 75%;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.non-input-area a {
+    text-decoration: none;
+    padding-bottom: 20px;
+}
+
+.non-input-area .create {
+    padding-bottom: 40px;
+    padding-top: 30px;
+}
+
+.create-page {
+    text-align: center;
 }
